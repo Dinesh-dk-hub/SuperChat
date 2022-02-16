@@ -14,11 +14,9 @@ namespace SuperChat
         {
             Server s1 = new Server();
             Client c1 = new Client();
-           
 
-
-
-            Console.WriteLine("Registered User? Click 1 \nNew User? Click 2 For Registeration");
+            Console.WriteLine("Registered User? Click 1");
+               Console.WriteLine("New User? Click 2 For Registeration");
            int cw= Convert.ToInt32(Console.ReadLine());
             if (cw == 2)
             {
