@@ -89,7 +89,7 @@ namespace SuperChat
             }
             else
             {
-                FriendList.Remove((Client)s.RegisteredClients[h]);
+                FriendList.Remove(s.RegisteredClients[h]);
                 return "Contact Deletion Done";
             }
             
@@ -103,7 +103,7 @@ namespace SuperChat
             Console.WriteLine("Message:");
             string message = Console.ReadLine();
             string mess=n.Message(q, nme1, message);
-            Console.WriteLine( nme1 + "Message Alert");
+            Console.WriteLine( nme1 +" "+"Message Alert");
         
            Console.WriteLine( mess);
             Console.WriteLine("click any key to reply");
@@ -118,7 +118,7 @@ namespace SuperChat
             Console.WriteLine("Reply Message:");
             string message = Console.ReadLine();
             string mess=n.Message(name1, q, message);
-            Console.WriteLine(q + "Message Alert");
+            Console.WriteLine(q +" "+"Message Alert");
             Console.WriteLine(mess);
             Console.WriteLine("Click any key to reply");
             Console.ReadKey();
